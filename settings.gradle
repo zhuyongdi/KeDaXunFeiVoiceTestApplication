@@ -1,0 +1,2 @@
+rootProject.name = "KeDaXunFeiVoiceTestApplication"
+include ':app'

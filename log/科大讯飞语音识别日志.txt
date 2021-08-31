@@ -1,0 +1,59 @@
+//注意这里屏蔽了onVolumeChanged这个回调，因为只要在唤醒中，它就会一直回调
+
+//正常说话然后等待
+2021-08-31 18:29:16.396 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:29:16.493 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:29:19.769 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat00016b5d@dx17b9bc18a3c760c762}]
+2021-08-31 18:29:19.770 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（临时）：{"sn":1,"ls":false,"bg":0,"ed":0,"ws":[{"bg":70,"cw":[{"sc":0.0,"w":"我"}]},{"bg":94,"cw":[{"sc":0.0,"w":"今天"}]},{"bg":134,"cw":[{"sc":0.0,"w":"吃了"}]},{"bg":162,"cw":[{"sc":0.0,"w":"一个"}]},{"bg":186,"cw":[{"sc":0.0,"w":"苹果"}]}]}
+2021-08-31 18:29:21.153 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--结束识别
+2021-08-31 18:29:21.153 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+2021-08-31 18:29:21.155 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat00016b5d@dx17b9bc18a3c760c762}]
+2021-08-31 18:29:21.156 11789-11789/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（最终）：{"sn":2,"ls":true,"bg":0,"ed":0,"ws":[{"bg":0,"cw":[{"sc":0.0,"w":"。"}]}]}
+
+
+//没说话然后等待
+2021-08-31 18:30:19.576 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:30:19.666 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:30:29.986 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--结束识别
+2021-08-31 18:30:29.986 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+2021-08-31 18:30:29.989 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat00014283@gz17b9bc280f11453762}]
+2021-08-31 18:30:29.991 11790-11790/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（最终）：{"sn":1,"ls":true,"bg":0,"ed":0,"ws":[{"bg":0,"cw":[{"sc":0.00,"w":""}]}]}
+
+
+//没有开启识别直接调用cancel
+没有任何回调
+
+
+//没有开启识别直接调用stop
+没有任何回调
+
+
+//正常说话然后调用cancel
+2021-08-31 18:31:51.819 13587-13587/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:31:51.909 13587-13587/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:31:54.120 13587-13587/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat000152a3@dx17b9bc3e94f760c762}]
+2021-08-31 18:31:54.120 13587-13587/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（临时）：{"sn":1,"ls":false,"bg":0,"ed":0,"ws":[{"bg":76,"cw":[{"sc":0.0,"w":"我"}]}]}
+2021-08-31 18:31:56.178 13587-13587/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+
+
+//没说话然后调用canel
+2021-08-31 18:32:17.614 13588-13588/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:32:17.705 13588-13588/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:32:23.165 13588-13588/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+
+
+//正常说话然后调用stop
+2021-08-31 18:33:33.227 13589-13589/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:33:33.326 13589-13589/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:33:36.916 13589-13589/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+2021-08-31 18:33:37.039 13589-13589/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat0001db40@dx17b9bc57573760c762}]
+2021-08-31 18:33:37.040 13589-13589/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（最终）：{"sn":1,"ls":true,"bg":0,"ed":0,"ws":[{"bg":77,"cw":[{"sc":0.0,"w":"我"}]},{"bg":117,"cw":[{"sc":0.0,"w":"今天"}]},{"bg":189,"cw":[{"sc":0.0,"w":"吃了"}]},{"bg":261,"cw":[{"sc":0.0,"w":"一个"}]},{"bg":0,"cw":[{"sc":0.0,"w":"。"}]}]}
+
+
+//没说话然后调用stop
+2021-08-31 18:33:59.659 13590-13590/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--开始识别
+2021-08-31 18:33:59.752 13590-13590/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22002，i1=0，i2=0，bundle=null
+2021-08-31 18:34:02.986 13590-13590/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=22003，i1=0，i2=0，bundle=null
+2021-08-31 18:34:03.064 13590-13590/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: RecognizerListener--onEvent：i=20001，i1=0，i2=0，bundle=Bundle[{session_id=iat00013cca@dx17b9bc5dcab760c762}]
+2021-08-31 18:34:03.067 13590-13590/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: recognizer--识别到结果（最终）：{"sn":1,"ls":true,"bg":0,"ed":0,"ws":[{"bg":0,"cw":[{"sc":0.00,"w":""}]}]}
+

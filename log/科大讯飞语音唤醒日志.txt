@@ -1,0 +1,40 @@
+//注意这里屏蔽了onVolumeChanged这个回调，因为只要在唤醒中，它就会一直回调
+
+//开启唤醒，不说话，直接调用stop
+2021-08-31 18:11:04.576 4553-4553/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--开始唤醒
+
+//开启唤醒，说出唤醒词
+2021-08-31 18:12:03.349 8706-8706/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--开始唤醒
+2021-08-31 18:12:05.293 8706-8706/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--唤醒成功：【RAW】 {"sst":"wakeup", "id":0, "score":2160, "bos":1070, "eos":1740 ,"keyword":"da4-xi1-da4-xi1"}
+    【操作类型】wakeup
+    【唤醒词id】0
+    【得分】2160
+    【前端点】1070
+    【尾端点】1740
+
+//开启唤醒，说出唤醒词，过几秒再次说出唤醒词
+2021-08-31 18:14:49.112 8707-8707/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--开始唤醒
+2021-08-31 18:14:51.858 8707-8707/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--唤醒成功：【RAW】 {"sst":"wakeup", "id":0, "score":1698, "bos":1850, "eos":2440 ,"keyword":"da4-xi1-da4-xi1"}
+    【操作类型】wakeup
+    【唤醒词id】0
+    【得分】1698
+    【前端点】1850
+    【尾端点】2440
+2021-08-31 18:14:57.303 8707-8707/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--唤醒成功：【RAW】 {"sst":"wakeup", "id":0, "score":2000, "bos":7270, "eos":7880 ,"keyword":"da4-xi1-da4-xi1"}
+    【操作类型】wakeup
+    【唤醒词id】0
+    【得分】2000
+    【前端点】7270
+    【尾端点】7880
+
+//开启唤醒，说出唤醒词，过几秒调用stop
+2021-08-31 18:15:26.348 8708-8708/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--开始唤醒
+2021-08-31 18:15:28.447 8708-8708/com.zyd.kedaxunfeivoicetestapplication E/zzzzzzzzzz: wakeuper--唤醒成功：【RAW】 {"sst":"wakeup", "id":0, "score":1503, "bos":1290, "eos":1880 ,"keyword":"da4-xi1-da4-xi1"}
+    【操作类型】wakeup
+    【唤醒词id】0
+    【得分】1503
+    【前端点】1290
+    【尾端点】1880
+
+//不开启唤醒，直接调用关闭
+什么都不调用
